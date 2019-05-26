@@ -2,9 +2,11 @@ import React, { Component } from 'react'
 
 class ScrollObserver extends Component {    
   constructor(props) {
-    super(props);
+    super(props);    
+    this.cmpRef = React.createRef();
   }
-  componentDidMount = () => {
+  
+  componentDidMount() {
     if (this.cmpRef.current){
       this.observer = new IntersectionObserver(
         ([entry]) => {
@@ -22,13 +24,13 @@ class ScrollObserver extends Component {
     }
   }
 
-  componentWillUnmount = () => {
+  componentWillUnmount() {
     this.observer.disconnect();
   }
 
   onIntersecting = () => {
     if (this.props.loadMore){
-      if (this.props.onLoadMore){
+      if (this.props.callback){
         this.props.callback();
       }
     }

@@ -1,6 +1,6 @@
 {
   "name": "@thisnamespace/scrollobserver",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Turn any container into an infinite scroll container or fire a function when reaching a particular part of a web page.",
   "main": "index.js",
   "scripts": {
@@ -27,9 +27,6 @@
   "homepage": "https://github.com/thisnamespace/ScrollObserver#readme",
   "peerDependencies": {
     "react": "^16.8.6"
-  },
-  "dependencies": {
-    "webpack": "^4.32.2"
   },
   "devDependencies": {
     "babel-core": "^6.21.0",

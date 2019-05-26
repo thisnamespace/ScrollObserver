@@ -1,7 +1,7 @@
 # Scroll Observer
-<!-- [![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][scroll-url]
-[![Downloads Stats][npm-downloads]][npm-url] -->
+[![NPM Version][npm-image]][npm-url]
+[![Build Status][building-image]][scroll-url]
+[![Downloads Stats][npm-downloads]][npm-url]
 
 
 Turn any container into an infinite scroll container or fire a function when reaching a particular part of a web page.
@@ -50,10 +50,10 @@ Distributed under the MIT license. See ``LICENSE`` for more information.
 4. Push to the branch (`git push origin feature/fooBar`)
 5. Create a new Pull Request
 
-<!-- Markdown link & img dfn's
-[npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
+<!-- Markdown link & img dfn's -->
+[npm-image]: https://img.shields.io/npm/v/@thisnamespace/scrollobserver.svg?style=flat-square
 [npm-url]: https://www.npmjs.com/package/@thisnamespace/scrollobserver
-[npm-downloads]: https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square
-[travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
-[scroll-url]: https://travis-ci.org/dbader/node-datadog-metrics
-[wiki]: https://github.com/yourname/yourproject/wiki -->
+[npm-downloads]: https://img.shields.io/npm/dm/@thisnamespace/scrollobserver.svg?style=flat-square
+[building-image]: https://img.shields.io/appveyor/ci/thisnamespace/scrollobserver.svg?style=flat-square
+[scroll-url]: https://github.com/thisnamespace/ScrollObserver
+[wiki]: https://github.com/yourname/yourproject/wiki

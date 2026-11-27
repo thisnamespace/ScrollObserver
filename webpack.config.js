@@ -1,8 +1,9 @@
-const webpack = require("webpack");
 const pkg = require("./package.json");
 const path = require("path");
 const libraryName = pkg.name;
 module.exports = {
+  // Keep the published bundle ES5, as it was with the previous toolchain
+  target: ["web", "es5"],
   entry: path.join(__dirname, "./src/index.js"),
   output: {
     path: path.join(__dirname, "./"),
@@ -10,12 +11,8 @@ module.exports = {
     library: libraryName,
     libraryTarget: "umd",
     publicPath: "/dist/",
-    umdNamedDefine: true
-  },
-  node: {
-    net: "empty",
-    tls: "empty",
-    dns: "empty"
+    umdNamedDefine: true,
+    globalObject: "typeof self !== 'undefined' ? self : this"
   },
   module: {
     rules: [

@@ -1,0 +1,17 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: monthly
+    groups:
+      build-tooling:
+        patterns: ['*']
+    ignore:
+      # Kept at the oldest supported React on purpose. CI tests the newer majors.
+      - dependency-name: react
+      - dependency-name: react-test-renderer
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
